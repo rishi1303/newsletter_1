@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body-block %}
+<style>
+    h1{
+    text-align: center;
+    }
+    body {
+    background-color: #cccccc;
+    }
+    img{
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        }
+
+
+
+</style>
+    <h1>Welcome to Newsletter Web-App</h1>
+    <img src="{% static 'images2.jpg' %}" alt="MyImage">
+{% endblock %}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emails</title>
+    <style>
+            ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+      background-color: #111;
+    }
+    </style>
+</head>
+<body>
+    <nav class='navbar navbar-default navbar-static-top'>
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a class="navbar-brand" href="{% url 'base' %}">HOME</a></li>
+                <li><a class="navbar-link" href="{% url 'login' %}">Send Mails</a></li>
+                <li><a class="navbar-link" href="{% url 'home' %}">Subscribe</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        {% block body-block %}
+        {% endblock %}
+    </div>
+</body>
+</html>
